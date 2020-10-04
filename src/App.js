@@ -14,8 +14,6 @@ import Header from './components/header/header.component';
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
 
-import './App.css';
-
 function App({ currentUser, setCurrentUser }) {
   React.useEffect(() => {
     const unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
